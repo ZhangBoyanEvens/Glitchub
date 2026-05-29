@@ -24,6 +24,7 @@ import { attachRoomSpinWebSocket } from './roomSpinHub.js'
 import { registerRoomFsmRoutes } from './roomFsm/roomService.js'
 import { bootstrapOrgGames, registerOrgGameRoutes } from './orgGames/orgGameRoutes.js'
 import { ensureReputationSchema } from './reputation/reputationService.js'
+import { registerHomepageRoutes } from './homepage/homepageRoutes.js'
 
 const app = express()
 const port = Number(process.env.PORT ?? 8787)
@@ -423,6 +424,7 @@ registerRoomCaseDrawLogRoutes(app, pool)
 registerRoomWishPoolRoutes(app, pool)
 registerResendHostInvitationEmailRoutes(app, pool)
 registerOrgGameRoutes(app, pool)
+registerHomepageRoutes(app, pool)
 
 const isProduction = process.env.NODE_ENV === 'production'
 const distDir = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'dist')

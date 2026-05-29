@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="public/logo.svg" alt="Glitchub logo" width="120" />
+</p>
+
 # Glitchub
 
 Multiplayer game-night coordination platform: book sessions, join instant rooms, build a shared wish pool, spin for a game, and vote to finalize — with Clerk Organizations, a deterministic room FSM, and Neon PostgreSQL.
