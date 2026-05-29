@@ -1,0 +1,229 @@
+{
+  "fetchedAt": "2026-05-18T09:40:14.124Z",
+  "prices": {
+    "泰拉瑞亚": {
+      "appId": 105600,
+      "cents": 4200,
+      "label": "¥ 42.00",
+      "discountPercent": 0
+    },
+    "左 4 死 2": {
+      "appId": 550,
+      "cents": 4200,
+      "label": "¥ 42.00",
+      "discountPercent": 0
+    },
+    "人类一败涂地": {
+      "appId": 477160,
+      "cents": 1740,
+      "label": "¥ 17.40",
+      "discountPercent": 70
+    },
+    "恐鬼症": {
+      "appId": 739630,
+      "cents": 4760,
+      "label": "¥ 47.60",
+      "discountPercent": 30
+    },
+    "PICO park": {
+      "appId": 1509960,
+      "cents": 2200,
+      "label": "¥ 22.00",
+      "discountPercent": 0
+    },
+    "胡闹厨房 2": {
+      "appId": 728880,
+      "cents": 9800,
+      "label": "¥ 98.00",
+      "discountPercent": 0
+    },
+    "致命公司": {
+      "appId": 1966720,
+      "cents": 4200,
+      "label": "¥ 42.00",
+      "discountPercent": 0
+    },
+    "森林之子": {
+      "appId": 1326470,
+      "cents": 10800,
+      "label": "¥ 108.00",
+      "discountPercent": 0
+    },
+    "方舟：生存进化": {
+      "appId": 346110,
+      "cents": 5800,
+      "label": "¥ 58.00",
+      "discountPercent": 0
+    },
+    "帕鲁": {
+      "appId": 1623730,
+      "cents": 10800,
+      "label": "¥ 108.00",
+      "discountPercent": 0
+    },
+    "raft": {
+      "appId": 648800,
+      "cents": 7700,
+      "label": "¥ 77.00",
+      "discountPercent": 0
+    },
+    "ready or not": {
+      "appId": 1144200,
+      "cents": 15900,
+      "label": "¥ 159.00",
+      "discountPercent": 0
+    },
+    "僵尸世界大战": {
+      "appId": 699130,
+      "cents": 3225,
+      "label": "¥ 32.25",
+      "discountPercent": 75
+    },
+    "squad（战术小队）": {
+      "appId": 393380,
+      "cents": 17000,
+      "label": "¥ 170.00",
+      "discountPercent": 0
+    },
+    "潜渊症": {
+      "appId": 602960,
+      "cents": 13000,
+      "label": "¥ 130.00",
+      "discountPercent": 0
+    },
+    "Among us": {
+      "appId": 945360,
+      "cents": 2500,
+      "label": "¥ 25.00",
+      "discountPercent": 0
+    },
+    "骗子酒馆": {
+      "appId": 3097560,
+      "cents": 2900,
+      "label": "¥ 29.00",
+      "discountPercent": 0
+    },
+    "Peak": {
+      "appId": 3527290,
+      "cents": 2046,
+      "label": "¥ 20.46",
+      "discountPercent": 38
+    },
+    "胖揍派对": {
+      "appId": 509980,
+      "cents": 7999,
+      "label": "¥ 79.99",
+      "discountPercent": 0
+    },
+    "逃离后室": {
+      "appId": 1943950,
+      "cents": 3700,
+      "label": "¥ 37.00",
+      "discountPercent": 0
+    },
+    "前方高能": {
+      "appId": 1244090,
+      "cents": 16500,
+      "label": "¥ 165.00",
+      "discountPercent": 0
+    },
+    "Chain tgt": {
+      "appId": 2567870,
+      "cents": 2200,
+      "label": "¥ 22.00",
+      "discountPercent": 0
+    },
+    "Keep Exploding no Talking": {
+      "appId": 2797340,
+      "cents": 4200,
+      "label": "¥ 42.00",
+      "discountPercent": 0
+    },
+    "RV There Yet?": {
+      "appId": 2644470,
+      "cents": 4000,
+      "label": "¥ 40.00",
+      "discountPercent": 0
+    },
+    "Repo": {
+      "appId": 3241660,
+      "cents": 3500,
+      "label": "¥ 35.00",
+      "discountPercent": 0
+    },
+    "Shift at Midnight（Demo）": {
+      "appId": 2825530,
+      "cents": 5600,
+      "label": "¥ 56.00",
+      "discountPercent": 0
+    },
+    "SOS OPS": {
+      "appId": 2475460,
+      "cents": 3499,
+      "label": "¥ 34.99",
+      "discountPercent": 0
+    },
+    "casino simulator": {
+      "appId": 270130,
+      "cents": 5000,
+      "label": "¥ 50.00",
+      "discountPercent": 0
+    },
+    "文明 6": {
+      "appId": 289070,
+      "cents": 22000,
+      "label": "¥ 220.00",
+      "discountPercent": 0
+    },
+    "Payday2": {
+      "appId": 218620,
+      "cents": 1750,
+      "label": "¥ 17.50",
+      "discountPercent": 50
+    },
+    "恶魔轮盘（CD期）": {
+      "appId": 2835570,
+      "cents": 1200,
+      "label": "¥ 12.00",
+      "discountPercent": 0
+    },
+    "你画我猜（CD期）": {
+      "appId": 1483870,
+      "cents": 2500,
+      "label": "¥ 25.00",
+      "discountPercent": 0
+    }
+  },
+  "skipped": [
+    {
+      "title": "饥荒",
+      "appId": 322330,
+      "reason": "fetch failed"
+    },
+    {
+      "title": "星露谷",
+      "appId": 413150,
+      "reason": "fetch failed"
+    },
+    {
+      "title": "GTA5",
+      "appId": 271590,
+      "reason": "no CNY price_overview"
+    },
+    {
+      "title": "Palia",
+      "appId": 1786180,
+      "reason": "no CNY price_overview"
+    },
+    {
+      "title": "袜罪并罚",
+      "appId": 3566500,
+      "reason": "no CNY price_overview"
+    },
+    {
+      "title": "乞丐模拟器",
+      "appId": 871720,
+      "reason": "no CNY price_overview"
+    }
+  ]
+}

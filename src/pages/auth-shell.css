@@ -1,0 +1,329 @@
+/* —— 登录 / 注册页：紫 × 黑 氛围 —— */
+
+.auth-shell {
+  --auth-void: #020204;
+  --auth-ink: #0a0612;
+  --auth-violet-deep: #1e0b3a;
+  --auth-violet: #7c3aed;
+  --auth-violet-soft: #a78bfa;
+  --auth-violet-glow: rgba(124, 58, 237, 0.45);
+  --auth-lilac: #c4b5fd;
+
+  height: 100vh;
+  height: 100dvh;
+  max-height: 100vh;
+  max-height: 100dvh;
+  min-height: 0;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  color: #e9e4ff;
+  background:
+    radial-gradient(ellipse 120% 80% at 50% -20%, #2e1065 0%, transparent 55%),
+    radial-gradient(ellipse 90% 60% at 100% 100%, #3b0764 0%, transparent 50%),
+    radial-gradient(ellipse 70% 50% at 0% 80%, #1e1b4b 0%, transparent 45%),
+    linear-gradient(168deg, var(--auth-void) 0%, var(--auth-ink) 38%, #12081f 72%, var(--auth-void) 100%);
+}
+
+.auth-shell__bloom {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.auth-shell__bloom--a {
+  width: min(72vw, 520px);
+  height: min(72vw, 520px);
+  top: -18%;
+  right: -8%;
+  background: radial-gradient(circle, var(--auth-violet-glow), transparent 70%);
+}
+
+.auth-shell__bloom--b {
+  width: min(60vw, 420px);
+  height: min(60vw, 420px);
+  bottom: -12%;
+  left: -15%;
+  background: radial-gradient(circle, rgba(192, 38, 211, 0.35), transparent 68%);
+}
+
+.auth-shell__bloom--c {
+  width: 40vmin;
+  height: 40vmin;
+  top: 42%;
+  left: 50%;
+  translate: -50% -50%;
+  background: radial-gradient(
+    circle,
+    rgba(139, 92, 246, 0.2) 0%,
+    transparent 65%
+  );
+  opacity: 0.9;
+}
+
+.auth-shell__mesh {
+  position: absolute;
+  inset: 0;
+  opacity: 0.07;
+  pointer-events: none;
+  background-image:
+    linear-gradient(105deg, var(--auth-lilac) 1px, transparent 1px),
+    linear-gradient(105deg, transparent calc(100% - 1px), var(--auth-lilac) calc(100% - 1px));
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 20%, transparent 100%);
+}
+
+.auth-shell__scan {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 3px,
+    rgba(167, 139, 250, 0.03) 3px,
+    rgba(167, 139, 250, 0.03) 4px
+  );
+  opacity: 0.5;
+}
+
+.auth-shell__header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px clamp(20px, 4vw, 40px);
+}
+
+.auth-shell__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Syne', system-ui, sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.15rem, 2.5vw, 1.45rem);
+  letter-spacing: -0.04em;
+  text-decoration: none;
+  color: #faf5ff;
+}
+
+.auth-shell__brand > span {
+  background: linear-gradient(
+    115deg,
+    #faf5ff 0%,
+    var(--auth-violet-soft) 45%,
+    var(--auth-violet) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 40px rgba(167, 139, 250, 0.35);
+}
+
+.auth-shell__brandMark {
+  flex-shrink: 0;
+  display: block;
+  filter: drop-shadow(0 0 12px rgba(168, 85, 247, 0.45));
+}
+
+.auth-shell__skip {
+  font-size: 0.8125rem;
+  color: #8b7caf;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.auth-shell__skip:hover {
+  color: var(--auth-violet-soft);
+}
+
+.auth-shell__main {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  width: 100%;
+  padding: clamp(16px, 3vh, 32px) clamp(18px, 4vw, 40px) clamp(16px, 3vh, 28px);
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.auth-shell__layout {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(16px, 3vw, 32px);
+  width: 100%;
+  min-height: 0;
+}
+
+.auth-shell__aside {
+  position: relative;
+  flex: 0 0 50%;
+  width: 50%;
+  max-width: 50%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  padding: clamp(8px, 2vw, 16px) clamp(8px, 2vw, 24px) clamp(8px, 2vw, 16px) 0;
+  box-sizing: border-box;
+}
+
+.auth-shell__rail {
+  flex: 0 0 35%;
+  width: 35%;
+  min-width: 260px;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 参考：超粗几何无衬线、全大写、极紧行距与字距、左对齐、自上而下略变淡 */
+.auth-shell__hero {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  line-height: calc(1.1);
+  letter-spacing: -0.055em;
+  text-transform: uppercase;
+  font-family: 'Archivo Black', 'Arial Black', 'Impact', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.auth-shell__heroLine {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: clamp(4rem, 13.6vw, min(28vh, 9.5rem));
+  color: #ffffff;
+  text-shadow: 0 0 42px rgba(167, 139, 250, 0.2);
+}
+
+.auth-shell__heroLine:nth-child(1) {
+  opacity: 1;
+}
+
+.auth-shell__heroLine:nth-child(2) {
+  opacity: 0.9;
+}
+
+.auth-shell__heroLine:nth-child(3) {
+  opacity: 0.72;
+}
+
+.auth-shell__heroLine:nth-child(n + 4) {
+  opacity: 0.65;
+}
+
+.auth-shell__card {
+  position: relative;
+  width: 100%;
+  margin-inline: 0;
+}
+
+.auth-shell__cardInner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  border-radius: 16px;
+  padding: 0;
+  background: transparent;
+  backdrop-filter: none;
+}
+
+.auth-shell__clerk {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.auth-shell__clerk > * {
+  width: 100%;
+  max-width: 100%;
+  margin-inline: 0;
+}
+
+.auth-shell__signedIn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 12px;
+}
+
+.auth-shell__signedInText {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #ddd6fe;
+}
+
+.auth-shell__missing {
+  margin: 0;
+  padding: 28px 22px;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #c4b5fd;
+  text-align: center;
+}
+
+.auth-shell__missing code {
+  font-size: 0.82rem;
+  color: #e9d5ff;
+}
+
+@media (max-width: 900px) {
+  .auth-shell__layout {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .auth-shell__aside {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+    padding: 8px 16px 0;
+  }
+
+  .auth-shell__hero {
+    align-items: center;
+    text-align: center;
+  }
+
+  .auth-shell__heroLine {
+    font-size: clamp(3.5rem, 20vw, 6.5rem);
+  }
+
+  .auth-shell__rail {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 440px;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-shell__rail {
+    min-width: 0;
+  }
+}

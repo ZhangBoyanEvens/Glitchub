@@ -1,0 +1,345 @@
+/* Organization 页：左 25% 成员 | 右上 ~20% 邀请 | 右下概览 —— 撑满主区剩余高度 */
+
+.dashboard__panel.dashboard__org.dashboard__org--split {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard__org--stateLoading {
+  justify-content: center;
+}
+
+.dashboard__org--stateEmpty {
+  justify-content: flex-start;
+}
+
+.dashboard__org--stateEmpty .dashboard__orgEmpty {
+  flex: 1;
+  min-height: 0;
+}
+
+.dashboard__orgLoading,
+.dashboard__orgMuted {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #a59cc8;
+}
+
+.dashboard__orgLink {
+  color: #c4b5fd;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.dashboard__orgLink:hover {
+  color: #faf5ff;
+}
+
+.dashboard__orgEmpty {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 420px;
+}
+
+.dashboard__orgCreateWrap {
+  border-radius: 14px;
+  padding: 8px;
+  background: rgba(15, 23, 42, 0.45);
+  border: 1px solid rgba(167, 139, 250, 0.15);
+}
+
+.dashboard__org--split > .dashboard__orgLayout:first-child {
+  margin-top: 0;
+}
+
+.dashboard__orgLayout {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: clamp(16px, 2.5vw, 24px);
+  flex: 1;
+  min-height: 0;
+}
+
+.dashboard__orgMembers {
+  flex: 0 0 25%;
+  width: 25%;
+  max-width: 25%;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(14px, 2vw, 20px);
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid rgba(167, 139, 250, 0.12);
+  box-sizing: border-box;
+}
+
+.dashboard__orgMembersTitle {
+  margin: 0 0 14px;
+  font-family: 'Syne', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #a59cc8;
+}
+
+.dashboard__orgMemberList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+}
+
+.dashboard__orgMemberRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 6px;
+  border-radius: 10px;
+  background: rgba(2, 2, 8, 0.25);
+}
+
+.dashboard__orgMemberAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.dashboard__orgMemberAvatar--ph {
+  background: linear-gradient(135deg, #4c1d95, #7c3aed);
+}
+
+.dashboard__orgMemberText {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.dashboard__orgMemberName {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #f5f3ff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dashboard__orgMemberRole {
+  font-size: 0.72rem;
+  color: #8b7caf;
+}
+
+.dashboard__orgRight {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(14px, 2vw, 20px);
+}
+
+.dashboard__orgInvite {
+  flex: 1 1 0;
+  min-height: 0;
+  padding: clamp(16px, 2.2vw, 22px);
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.45);
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.dashboard__orgSectionTitle {
+  margin: 0;
+  font-family: 'Syne', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #faf5ff;
+}
+
+.dashboard__orgInviteRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.dashboard__orgInviteInput {
+  flex: 1;
+  min-width: 180px;
+  padding: 11px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(167, 139, 250, 0.25);
+  background: rgba(2, 2, 8, 0.45);
+  color: #f5f3ff;
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+
+.dashboard__orgInviteInput::placeholder {
+  color: #6b5f8f;
+}
+
+.dashboard__orgInviteBtn {
+  appearance: none;
+  cursor: pointer;
+  padding: 11px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #1e1b4b;
+  background: #a78bfa;
+  border: 1px solid #8b5cf6;
+  flex-shrink: 0;
+  transition: background 0.15s ease;
+}
+
+.dashboard__orgInviteBtn:hover:not(:disabled) {
+  background: #c4b5fd;
+}
+
+.dashboard__orgInviteBtn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.dashboard__orgInviteOk {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #86efac;
+}
+
+.dashboard__orgInviteErr {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: #fda4af;
+}
+
+.dashboard__orgPending {
+  margin-top: 4px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(167, 139, 250, 0.1);
+}
+
+.dashboard__orgPendingLabel {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8b7caf;
+  margin-bottom: 8px;
+}
+
+.dashboard__orgPendingList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.dashboard__orgPendingItem {
+  font-size: 0.78rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(124, 58, 237, 0.15);
+  color: #ddd6fe;
+}
+
+.dashboard__orgOverview {
+  flex: 0 0 auto;
+  padding: clamp(16px, 2.2vw, 22px);
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.4);
+  border: 1px solid rgba(167, 139, 250, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: hidden;
+}
+
+.dashboard__orgOverviewTop {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.dashboard__orgOverviewTop .cl-rootBox,
+.dashboard__orgOverviewTop [class*='organizationSwitcher'] {
+  max-width: 100%;
+}
+
+.dashboard__orgOverviewGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 18px;
+}
+
+@media (max-width: 720px) {
+  .dashboard__orgLayout {
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+  }
+
+  .dashboard__orgMembers {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+    max-height: 280px;
+  }
+
+}
+
+.dashboard__orgStat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: rgba(2, 2, 8, 0.35);
+  border: 1px solid rgba(167, 139, 250, 0.08);
+}
+
+.dashboard__orgStat--wide {
+  grid-column: 1 / -1;
+}
+
+.dashboard__orgStatLabel {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8b7caf;
+}
+
+.dashboard__orgStatValue {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ede9fe;
+  word-break: break-word;
+}

@@ -1,0 +1,418 @@
+{
+  "generatedAt": "2026-05-28T09:38:46.201Z",
+  "normalize": "lower-trim-paren",
+  "games": {
+    "饥荒": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/322330/header.jpg",
+      "steamUrl": null,
+      "priceLabel": null,
+      "priceCents": null,
+      "steamAppId": null,
+      "sizeLabel": "3 GB",
+      "sizeBytes": 3000000000
+    },
+    "星露谷": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/413150/header.jpg",
+      "steamUrl": null,
+      "priceLabel": null,
+      "priceCents": null,
+      "steamAppId": null,
+      "sizeLabel": "<1GB",
+      "sizeBytes": 500000000
+    },
+    "泰拉瑞亚": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/105600/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/105600/",
+      "priceLabel": "¥ 42.00",
+      "priceCents": 4200,
+      "steamAppId": 105600,
+      "sizeLabel": "4 GB",
+      "sizeBytes": 4000000000
+    },
+    "左 4 死 2": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/550/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/550/",
+      "priceLabel": "¥ 42.00",
+      "priceCents": 4200,
+      "steamAppId": 550,
+      "sizeLabel": "13 GB",
+      "sizeBytes": 13000000000
+    },
+    "人类一败涂地": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/477160/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/477160/",
+      "priceLabel": "¥ 17.40",
+      "priceCents": 1740,
+      "steamAppId": 477160,
+      "sizeLabel": "2 GB",
+      "sizeBytes": 2000000000
+    },
+    "恐鬼症": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/739630/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/739630/",
+      "priceLabel": "¥ 47.60",
+      "priceCents": 4760,
+      "steamAppId": 739630,
+      "sizeLabel": "21 GB",
+      "sizeBytes": 21000000000
+    },
+    "PICO park": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/1509960/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/1509960/",
+      "priceLabel": "¥ 22.00",
+      "priceCents": 2200,
+      "steamAppId": 1509960,
+      "sizeLabel": "<1GB",
+      "sizeBytes": 500000000
+    },
+    "胡闹厨房 2": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/728880/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/728880/",
+      "priceLabel": "¥ 98.00",
+      "priceCents": 9800,
+      "steamAppId": 728880,
+      "sizeLabel": "4 GB",
+      "sizeBytes": 4000000000
+    },
+    "致命公司": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/1966720/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/1966720/",
+      "priceLabel": "¥ 42.00",
+      "priceCents": 4200,
+      "steamAppId": 1966720,
+      "sizeLabel": "4 GB",
+      "sizeBytes": 4000000000
+    },
+    "森林之子": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/1326470/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/1326470/",
+      "priceLabel": "¥ 108.00",
+      "priceCents": 10800,
+      "steamAppId": 1326470,
+      "sizeLabel": "20 GB",
+      "sizeBytes": 20000000000
+    },
+    "方舟：生存进化": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/346110/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/346110/",
+      "priceLabel": "¥ 58.00",
+      "priceCents": 5800,
+      "steamAppId": 346110,
+      "sizeLabel": "60 GB",
+      "sizeBytes": 60000000000
+    },
+    "帕鲁": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/1623730/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/1623730/",
+      "priceLabel": "¥ 108.00",
+      "priceCents": 10800,
+      "steamAppId": 1623730,
+      "sizeLabel": "40 GB",
+      "sizeBytes": 40000000000
+    },
+    "raft": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/648800/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/648800/",
+      "priceLabel": "¥ 77.00",
+      "priceCents": 7700,
+      "steamAppId": 648800,
+      "sizeLabel": "10 GB",
+      "sizeBytes": 10000000000
+    },
+    "GTA5": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg",
+      "steamUrl": null,
+      "priceLabel": null,
+      "priceCents": null,
+      "steamAppId": null,
+      "sizeLabel": "95 GB",
+      "sizeBytes": 95000000000
+    },
+    "ready or not": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/1144200/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/1144200/",
+      "priceLabel": "¥ 159.00",
+      "priceCents": 15900,
+      "steamAppId": 1144200,
+      "sizeLabel": "60 GB",
+      "sizeBytes": 60000000000
+    },
+    "僵尸世界大战": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/699130/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/699130/",
+      "priceLabel": "¥ 32.25",
+      "priceCents": 3225,
+      "steamAppId": 699130,
+      "sizeLabel": "50 GB",
+      "sizeBytes": 50000000000
+    },
+    "squad（战术小队）": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/393380/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/393380/",
+      "priceLabel": "¥ 170.00",
+      "priceCents": 17000,
+      "steamAppId": 393380,
+      "sizeLabel": "65 GB",
+      "sizeBytes": 65000000000
+    },
+    "潜渊症": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/602960/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/602960/",
+      "priceLabel": "¥ 130.00",
+      "priceCents": 13000,
+      "steamAppId": 602960,
+      "sizeLabel": "2 GB",
+      "sizeBytes": 2000000000
+    },
+    "Among us": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/945360/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/945360/",
+      "priceLabel": "¥ 25.00",
+      "priceCents": 2500,
+      "steamAppId": 945360,
+      "sizeLabel": "<1GB",
+      "sizeBytes": 250000000
+    },
+    "骗子酒馆": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/3097560/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/3097560/",
+      "priceLabel": "¥ 29.00",
+      "priceCents": 2900,
+      "steamAppId": 3097560,
+      "sizeLabel": "15 GB",
+      "sizeBytes": 15000000000
+    },
+    "Peak": {
+      "imagePath": "/images/games/peak.jpg",
+      "steamUrl": "https://store.steampowered.com/app/3527290/",
+      "priceLabel": "¥ 20.46",
+      "priceCents": 2046,
+      "steamAppId": 3527290,
+      "sizeLabel": "6 GB",
+      "sizeBytes": 6000000000
+    },
+    "胖揍派对": {
+      "imagePath": "/images/games/pang-zou-party.jpg",
+      "steamUrl": "https://store.steampowered.com/app/509980/",
+      "priceLabel": "¥ 79.99",
+      "priceCents": 7999,
+      "steamAppId": 509980,
+      "sizeLabel": "10 GB",
+      "sizeBytes": 10000000000
+    },
+    "逃离后室": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/1943950/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/1943950/",
+      "priceLabel": "¥ 37.00",
+      "priceCents": 3700,
+      "steamAppId": 1943950,
+      "sizeLabel": "25 GB",
+      "sizeBytes": 25000000000
+    },
+    "前方高能": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/1244090/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/1244090/",
+      "priceLabel": "¥ 165.00",
+      "priceCents": 16500,
+      "steamAppId": 1244090,
+      "sizeLabel": "5 GB",
+      "sizeBytes": 5000000000
+    },
+    "Chain tgt": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/2567870/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/2567870/",
+      "priceLabel": "¥ 22.00",
+      "priceCents": 2200,
+      "steamAppId": 2567870,
+      "sizeLabel": "8 GB",
+      "sizeBytes": 8000000000
+    },
+    "Keep Exploding no Talking": {
+      "imagePath": "/images/games/keep-exploding-no-talking.jpg",
+      "steamUrl": "https://store.steampowered.com/app/2797340/",
+      "priceLabel": "¥ 42.00",
+      "priceCents": 4200,
+      "steamAppId": 2797340,
+      "sizeLabel": "<1GB",
+      "sizeBytes": 500000000
+    },
+    "RV There Yet?": {
+      "imagePath": "/images/games/rv-there-yet.jpg",
+      "steamUrl": "https://store.steampowered.com/app/2644470/",
+      "priceLabel": "¥ 40.00",
+      "priceCents": 4000,
+      "steamAppId": 2644470,
+      "sizeLabel": "1 GB",
+      "sizeBytes": 1000000000
+    },
+    "Repo": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/3241660/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/3241660/",
+      "priceLabel": "¥ 35.00",
+      "priceCents": 3500,
+      "steamAppId": 3241660,
+      "sizeLabel": "1 GB",
+      "sizeBytes": 1000000000
+    },
+    "盗窃地精": {
+      "imagePath": "https://img1.wywyx.com/uploads/allimg/260417/86U26041G615260UL.jpg",
+      "steamUrl": null,
+      "priceLabel": null,
+      "priceCents": null,
+      "steamAppId": null,
+      "sizeLabel": "5 GB",
+      "sizeBytes": 5000000000
+    },
+    "Palia": {
+      "imagePath": "/images/games/palia.jpg",
+      "steamUrl": null,
+      "priceLabel": null,
+      "priceCents": null,
+      "steamAppId": null,
+      "sizeLabel": "15 GB",
+      "sizeBytes": 15000000000
+    },
+    "袜罪并罚": {
+      "imagePath": "/images/games/wazui-bingfa.jpg",
+      "steamUrl": null,
+      "priceLabel": null,
+      "priceCents": null,
+      "steamAppId": null,
+      "sizeLabel": "8 GB",
+      "sizeBytes": 8000000000
+    },
+    "Shift at Midnight（Demo）": {
+      "imagePath": "/images/games/shift-at-midnight.jpg",
+      "steamUrl": "https://store.steampowered.com/app/2825530/",
+      "priceLabel": "¥ 56.00",
+      "priceCents": 5600,
+      "steamAppId": 2825530,
+      "sizeLabel": "6 GB",
+      "sizeBytes": 6000000000
+    },
+    "SOS OPS": {
+      "imagePath": "/images/games/sos-ops.jpg",
+      "steamUrl": "https://store.steampowered.com/app/2475460/",
+      "priceLabel": "¥ 34.99",
+      "priceCents": 3499,
+      "steamAppId": 2475460,
+      "sizeLabel": "2 GB",
+      "sizeBytes": 2000000000
+    },
+    "乞丐模拟器": {
+      "imagePath": "/images/games/qi-gai-moni-qi.jpg",
+      "steamUrl": null,
+      "priceLabel": null,
+      "priceCents": null,
+      "steamAppId": null,
+      "sizeLabel": "6.5 GB",
+      "sizeBytes": 6500000000
+    },
+    "casino simulator": {
+      "imagePath": "/images/games/casino-simulator.jpg",
+      "steamUrl": "https://store.steampowered.com/app/270130/",
+      "priceLabel": "¥ 50.00",
+      "priceCents": 5000,
+      "steamAppId": 270130,
+      "sizeLabel": "8 GB",
+      "sizeBytes": 8000000000
+    },
+    "文明 6": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/289070/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/289070/",
+      "priceLabel": "¥ 220.00",
+      "priceCents": 22000,
+      "steamAppId": 289070,
+      "sizeLabel": "23 GB",
+      "sizeBytes": 23000000000
+    },
+    "Payday2": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/218620/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/218620/",
+      "priceLabel": "¥ 17.50",
+      "priceCents": 1750,
+      "steamAppId": 218620,
+      "sizeLabel": "83 GB",
+      "sizeBytes": 83000000000
+    },
+    "PCL2 MC": {
+      "imagePath": "/images/games/pcl2-mc.jpg",
+      "steamUrl": null,
+      "priceLabel": null,
+      "priceCents": null,
+      "steamAppId": null,
+      "sizeLabel": "<1GB",
+      "sizeBytes": 500000000
+    },
+    "腾讯斗地主": {
+      "imagePath": "/images/games/tencent-doudizhu.jpg",
+      "steamUrl": null,
+      "priceLabel": null,
+      "priceCents": null,
+      "steamAppId": null,
+      "sizeLabel": "<1GB",
+      "sizeBytes": 500000000
+    },
+    "恶魔轮盘（CD期）": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/2835570/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/2835570/",
+      "priceLabel": "¥ 12.00",
+      "priceCents": 1200,
+      "steamAppId": 2835570,
+      "sizeLabel": "<1GB",
+      "sizeBytes": 500000000
+    },
+    "你画我猜（CD期）": {
+      "imagePath": "https://cdn.cloudflare.steamstatic.com/steam/apps/1483870/header.jpg",
+      "steamUrl": "https://store.steampowered.com/app/1483870/",
+      "priceLabel": "¥ 25.00",
+      "priceCents": 2500,
+      "steamAppId": 1483870,
+      "sizeLabel": "1 GB",
+      "sizeBytes": 1000000000
+    }
+  },
+  "byNormalizedTitle": {
+    "饥荒": "饥荒",
+    "星露谷": "星露谷",
+    "泰拉瑞亚": "泰拉瑞亚",
+    "左 4 死 2": "左 4 死 2",
+    "人类一败涂地": "人类一败涂地",
+    "恐鬼症": "恐鬼症",
+    "pico park": "PICO park",
+    "胡闹厨房 2": "胡闹厨房 2",
+    "致命公司": "致命公司",
+    "森林之子": "森林之子",
+    "方舟：生存进化": "方舟：生存进化",
+    "帕鲁": "帕鲁",
+    "raft": "raft",
+    "gta5": "GTA5",
+    "ready or not": "ready or not",
+    "僵尸世界大战": "僵尸世界大战",
+    "squad(战术小队)": "squad（战术小队）",
+    "潜渊症": "潜渊症",
+    "among us": "Among us",
+    "骗子酒馆": "骗子酒馆",
+    "peak": "Peak",
+    "胖揍派对": "胖揍派对",
+    "逃离后室": "逃离后室",
+    "前方高能": "前方高能",
+    "chain tgt": "Chain tgt",
+    "keep exploding no talking": "Keep Exploding no Talking",
+    "rv there yet?": "RV There Yet?",
+    "repo": "Repo",
+    "盗窃地精": "盗窃地精",
+    "palia": "Palia",
+    "袜罪并罚": "袜罪并罚",
+    "shift at midnight(demo)": "Shift at Midnight（Demo）",
+    "sos ops": "SOS OPS",
+    "乞丐模拟器": "乞丐模拟器",
+    "casino simulator": "casino simulator",
+    "文明 6": "文明 6",
+    "payday2": "Payday2",
+    "pcl2 mc": "PCL2 MC",
+    "腾讯斗地主": "腾讯斗地主",
+    "恶魔轮盘(cd期)": "恶魔轮盘（CD期）",
+    "你画我猜(cd期)": "你画我猜（CD期）"
+  }
+}

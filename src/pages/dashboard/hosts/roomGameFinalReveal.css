@@ -1,0 +1,194 @@
+.roomFinal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(16px, 4vw, 40px);
+  box-sizing: border-box;
+  background: radial-gradient(ellipse at center, rgba(40, 24, 8, 0.97) 0%, rgba(4, 2, 12, 0.99) 70%);
+  animation: roomFinalFadeIn 0.55s ease-out both;
+}
+
+@keyframes roomFinalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.roomFinal__glow {
+  position: absolute;
+  inset: -20%;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 50% 45%, rgba(251, 191, 36, 0.45) 0%, transparent 42%),
+    radial-gradient(circle at 20% 80%, rgba(245, 158, 11, 0.2) 0%, transparent 35%),
+    radial-gradient(circle at 80% 20%, rgba(252, 211, 77, 0.18) 0%, transparent 38%);
+  animation: roomFinalGlowPulse 2.8s ease-in-out infinite;
+}
+
+@keyframes roomFinalGlowPulse {
+  0%,
+  100% {
+    opacity: 0.75;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+}
+
+.roomFinal__rays {
+  position: absolute;
+  inset: -50%;
+  pointer-events: none;
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    transparent 0deg,
+    rgba(251, 191, 36, 0.12) 12deg,
+    transparent 24deg,
+    rgba(252, 211, 77, 0.1) 36deg,
+    transparent 48deg,
+    rgba(245, 158, 11, 0.14) 60deg,
+    transparent 72deg
+  );
+  animation: roomFinalRaysSpin 24s linear infinite;
+}
+
+@keyframes roomFinalRaysSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.roomFinal__card {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 520px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(16px, 3vh, 24px);
+  padding: clamp(24px, 4vw, 36px);
+  border-radius: 20px;
+  border: 2px solid rgba(251, 191, 36, 0.55);
+  background: rgba(12, 8, 24, 0.88);
+  box-shadow:
+    0 0 0 1px rgba(252, 211, 77, 0.2) inset,
+    0 0 60px rgba(251, 191, 36, 0.35),
+    0 0 120px rgba(245, 158, 11, 0.2);
+  animation: roomFinalCardIn 0.65s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+}
+
+@keyframes roomFinalCardIn {
+  from {
+    opacity: 0;
+    transform: scale(0.88) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.roomFinal__eyebrow {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #fcd34d;
+}
+
+.roomFinal__title {
+  margin: 0;
+  font-size: clamp(1.5rem, 4vw, 2.1rem);
+  font-weight: 800;
+  line-height: 1.25;
+  text-align: center;
+  color: #fef9c3;
+  text-shadow: 0 0 24px rgba(251, 191, 36, 0.5);
+}
+
+.roomFinal__cover {
+  width: min(100%, 360px);
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 2px solid rgba(252, 211, 77, 0.45);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+.roomFinal__cover .gameCover--card,
+.roomFinal__cover .gameCover {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+
+.roomFinal__steam {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 10px;
+  border: 1px solid rgba(94, 234, 212, 0.35);
+  background: rgba(15, 118, 110, 0.35);
+  color: #99f6e4;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.roomFinal__steam:hover {
+  background: rgba(20, 184, 166, 0.45);
+  border-color: rgba(94, 234, 212, 0.55);
+  color: #ecfdf5;
+}
+
+.roomFinal__steamMuted {
+  margin: 0;
+  font-size: 0.78rem;
+  color: #94a3b8;
+}
+
+.roomFinal__continue {
+  appearance: none;
+  margin-top: 4px;
+  padding: 10px 24px;
+  border-radius: 10px;
+  border: 1px solid rgba(167, 139, 250, 0.4);
+  background: rgba(67, 56, 202, 0.35);
+  color: #e9d5ff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.roomFinal__continue:hover {
+  background: rgba(91, 33, 182, 0.5);
+  border-color: rgba(196, 181, 253, 0.5);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .roomFinal__glow,
+  .roomFinal__rays {
+    animation: none;
+  }
+
+  .roomFinal,
+  .roomFinal__card {
+    animation: none;
+  }
+}

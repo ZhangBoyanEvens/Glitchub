@@ -1,0 +1,398 @@
+.orgGames__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.orgGames__headerText {
+  flex: 1;
+  min-width: 12rem;
+}
+
+.orgGames__headerActions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.65rem;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.orgGames__headerButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.orgGames__newGameBtn,
+.orgGames__removalHeaderBtn {
+  white-space: nowrap;
+}
+
+.orgGames__btn--outlineDanger {
+  border-color: #ef4444;
+  color: #fca5a5;
+}
+
+.orgGames__btn--outlineDanger:hover:not(:disabled) {
+  background: rgba(239, 68, 68, 0.15);
+}
+
+.orgGames__modalHint {
+  margin: -0.35rem 0 0.85rem;
+  font-size: 0.82rem;
+  color: var(--dashboard-muted, #9ca3af);
+  line-height: 1.45;
+}
+
+.orgGames__select {
+  padding: 0.45rem 0.55rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.25);
+  color: inherit;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.orgGames__hint {
+  margin: 0.35rem 0 0;
+  font-size: 0.9rem;
+  color: var(--dashboard-muted, #9ca3af);
+}
+
+/* 组织游戏库：桌面每行 5 张卡片 */
+.orgGames__libraryGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 1280px) {
+  .orgGames__libraryGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 960px) {
+  .orgGames__libraryGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .orgGames__libraryGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.orgGames__libraryGrid .orgGames__gameCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.65) inset,
+    0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+.orgGames__libraryGrid .orgGames__gameCard:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.75) inset,
+    0 10px 22px rgba(0, 0, 0, 0.22);
+}
+
+.orgGames__libraryGrid .orgGames__gameBody {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding: 8px 10px 10px;
+  gap: 6px;
+}
+
+.orgGames__libraryGrid .dashboard__gameTitle {
+  font-size: 0.8rem;
+  line-height: 1.2;
+  -webkit-line-clamp: 2;
+}
+
+.orgGames__libraryGrid .dashboard__gameMeta {
+  gap: 3px;
+}
+
+.orgGames__libraryGrid .dashboard__gameMetaRow {
+  grid-template-columns: 2.25rem 1fr;
+  gap: 4px;
+  font-size: 0.68rem;
+}
+
+.orgGames__libraryGrid .dashboard__gameTag {
+  font-size: 0.62rem;
+  padding: 1px 5px;
+}
+
+.orgGames__libraryGrid .orgGames__steamLink {
+  font-size: 0.68rem;
+}
+
+.orgGames__libraryGrid .gameCover--card {
+  aspect-ratio: 16 / 9;
+  border-radius: 8px 8px 0 0;
+}
+
+.orgGames__libraryGrid .gameCover--card .gameCover__ph {
+  font-size: 1rem;
+}
+
+.orgGames__libraryGrid .orgGames__cover {
+  aspect-ratio: 16 / 9;
+}
+
+.orgGames__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.orgGames__card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.orgGames__cover {
+  aspect-ratio: 3 / 4;
+  background: rgba(255, 255, 255, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orgGames__coverImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.orgGames__coverPh {
+  font-size: 2rem;
+  font-weight: 700;
+  opacity: 0.5;
+}
+
+.orgGames__cardBody {
+  padding: 0.65rem 0.75rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.orgGames__cardTitle {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.3;
+}
+
+.orgGames__steamLink {
+  font-size: 0.8rem;
+}
+
+.orgGames__btn {
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.4rem 0.75rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  background: transparent;
+  color: inherit;
+}
+
+.orgGames__btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.orgGames__btn--primary {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: #fff;
+}
+
+.orgGames__btn--ghost {
+  font-size: 0.8rem;
+}
+
+.orgGames__btn--approve {
+  border-color: #22c55e;
+  color: #86efac;
+}
+
+.orgGames__btn--reject {
+  border-color: #ef4444;
+  color: #fca5a5;
+}
+
+.orgGames__proposalsSection {
+  margin-bottom: 0;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.orgGames__sectionTitle {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+}
+
+.orgGames__tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.orgGames__tab {
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.orgGames__tab.is-active {
+  background: rgba(59, 130, 246, 0.25);
+  border-color: #3b82f6;
+}
+
+.orgGames__proposalGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.orgGames__proposalCard {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.orgGames__proposalHead {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.orgGames__typeBadge {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+}
+
+.orgGames__typeBadge--add {
+  background: rgba(34, 197, 94, 0.2);
+  color: #86efac;
+}
+
+.orgGames__typeBadge--remove {
+  background: rgba(239, 68, 68, 0.2);
+  color: #fca5a5;
+}
+
+.orgGames__statusBadge {
+  font-size: 0.72rem;
+  opacity: 0.8;
+}
+
+.orgGames__proposalTitle {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+}
+
+.orgGames__proposalMeta {
+  margin: 0.15rem 0;
+  font-size: 0.82rem;
+  color: var(--dashboard-muted, #9ca3af);
+}
+
+.orgGames__voteStatus {
+  margin: 0.65rem 0 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.orgGames__voteSubmitted {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  color: var(--dashboard-muted, #9ca3af);
+}
+
+.orgGames__voteActions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.orgGames__error {
+  color: #f87171;
+  font-size: 0.85rem;
+  margin: 0.35rem 0 0;
+}
+
+.orgGames__modalBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.orgGames__modal {
+  width: min(420px, 100%);
+  background: #1a1d24;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.orgGames__modalTitle {
+  margin: 0 0 1rem;
+}
+
+.orgGames__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 0.85rem;
+  font-size: 0.85rem;
+}
+
+.orgGames__field input {
+  padding: 0.45rem 0.55rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.25);
+  color: inherit;
+}
+
+.orgGames__modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
